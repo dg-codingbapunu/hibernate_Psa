@@ -950,6 +950,13 @@ JPQL stands for Java Persistence Query Language. It is similar to SQL, but:
 -> It works with Java entity objects, not directly with database tables.
 -> It uses entity names and field/property names, not table or column names.
 
+If finder methods exist, why do we need JPQL?
+✅ Short Interview Answer
+
+Finder methods are used for simple queries, while JPQL is used when queries become complex,
+require joins, aggregation, complex filtering or better readability.
+
+
 Example:
 Create Repository Layer
 -----------------------
