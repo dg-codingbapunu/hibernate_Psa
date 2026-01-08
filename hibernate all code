@@ -313,7 +313,7 @@ What is Spring IOC?
 #########################
 -> Spring IOC Container is the core of the Spring Framework.
 -> It manages the lifecycle and Creation of application objects (called beans).
--> It creates, configures, and wires objects automatically based on configuration
+-> It creates, configures, and wires objects automatically based on configuration.
 -> Helps implement Dependency Injection (DI) easily.
 -> Promotes loose coupling because your classes don’t instantiate their dependencies directly.
 
