@@ -563,15 +563,15 @@ What is repository layer in spring boot?
 Note: Interview Question
 -------------------------
 What is SessionFactory in Hibernate?
-SessionFactory is a core interface in Hibernate responsible for:
--> Connecting to the database
--> Creating Session objects to perform operations like insert, update, delete, and query
+SessionFactory is a core interface in Hibernate responsible for craeting session object that session object interacting
+with database and perform operations like insert, update, delete, and query :
+
 
 Note:
 Optional class:
 ----------------
 -> Optional class was introduced in java version 8
--> It is alternate way to handle null pointer exception
+-> The Purpose of Optional Class is it Will Identify weather the referance variable is null or not null.
 
 Example:
 ---------
