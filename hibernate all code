@@ -45,6 +45,10 @@ public class Employee {
 
 1. @Entity - “This annotaion maps Java class to a table in the database.”
 2. @Id   - Indicates the primary key column, and is mandatory to define inside entity class
+3. Why @Id is Mandatory?
+The primary key column is mandatory in a database table because without a primary key, Hibernate cannot uniquely identify an object.
+As a result, Hibernate cannot perform CRUD operations, cannot track entity objects, and throws an exception.
+
 
 
 What is JPA?
