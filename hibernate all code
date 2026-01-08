@@ -67,6 +67,10 @@ Note:
 ######################
 Hibernate Mappings
 ######################
+1. ✅ Interview-Ready Definition
+
+Hibernate mapping defines how Java objects are mapped to database tables,
+including how class fields correspond to table columns and how relationships between objects are stored in the database.
 
 a. OneToMany Mapping - One record in Table A matches with multiple record in Table B
 -> @OneToMany
