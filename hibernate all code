@@ -52,7 +52,9 @@ As a result, Hibernate cannot perform CRUD operations, cannot track entity objec
 
 
 What is JPA?
-JPA (Java Persistence API) is only a specification — meaning it is a set of interfaces and incomplete annotations
+JPA (Java Persistence API) is only a specification — meaning it is a set of interfaces and incomplete annotations.
+JPA (Java Persistence API) is a specification, which means it defines a set of interfaces and standard annotations for ORM, 
+but does not provide the actual implementation.
 
 What is hibernate?
 The Implementation of JPA is done in hibernate and other ORM tools like EclipseLink, OpenJPA, DataNucleus
