@@ -2015,7 +2015,9 @@ Note: Default Fetch Type
 Hibernate Cache 
 #################
 
-Hibernate Cache is a mechanism in Hibernate ORM to reduce database access by storing frequently used data in memory.
+Hibernate caching is a mechanism used to store frequently accessed data in memory so that repeated database calls can be avoided,
+improving application performance.
+
 Note: Hibernate Cache = In-Memory (Temporary) Storage in RAM
 
 It helps improve performance by:
