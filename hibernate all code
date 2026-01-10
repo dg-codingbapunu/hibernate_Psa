@@ -1443,6 +1443,25 @@ private List<Comment> comments = new ArrayList<>();
 -> Comment does NOT have a reference back to Post (no @ManyToOne).
 -> The foreign key post_id is maintained in the comment table by Hibernate using @JoinColumn.
 
+
+✅ What is CascadeType.ALL?
+
+CascadeType.ALL means all persistence operations performed on the parent entity are automatically applied to its associated child entities.
+Persistence refers to saving Java objects into a database and retrieving them later.
+🔹 What operations are included?
+
+CascadeType.ALL is a shortcut for:
+
+PERSIST → save
+
+MERGE → update
+
+REMOVE → delete
+
+REFRESH → reload
+
+DETACH → detach from session
+
 #################################
 ✅ fetch = FetchType.EAGER
 #################################
