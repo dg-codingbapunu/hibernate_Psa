@@ -1465,6 +1465,13 @@ DETACH → detach from session
 #################################
 ✅ fetch = FetchType.EAGER
 #################################
+✅ What is FetchType.EAGER?
+
+FetchType.EAGER means related entities are loaded immediately along with the parent entity.
+
+When you fetch a parent object, Hibernate automatically fetches its associated entities in the same operation.
+
+
 -> "We are doing eager loading here because when Post entity is loaded in memory, its associated entities should be loaded."
 
 -> Exactly! That means:
@@ -1494,6 +1501,30 @@ Because of fetch = FetchType.EAGER, this will:
 -> Fetch 100,000 Comment rows, eagerly joined
 
 All of this data will be loaded into memory, even if you don’t use the comments!
+
+⚠️ Major Problems with FetchType.EAGER (Interview Favorite)
+1️⃣ Performance Issues
+
+Loads unnecessary data
+
+Slows down queries
+
+Increases memory usage
+
+3️⃣ Hard to Control
+_____________________________
+Fetching happens automatically
+
+You lose control over when data is loaded
+
+4️⃣ Serialization Issues (REST APIs)
+_____________________________________
+Can cause infinite recursion
+
+Large JSON responses
+
+Slower APIs
+
 
 🔹 Use Unidirectional + EAGER in Development:
 --------------------------------------------------
