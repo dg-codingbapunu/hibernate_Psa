@@ -1721,6 +1721,29 @@ class BlogappApplicationTests {
 }
 Unit Test
 --------------------------------------------------
+🔹 What is Lazy Fetch?
+
+Lazy fetch means related data is not loaded automatically when the parent entity is fetched.
+It is loaded only when we explicitly access it.
+
+🔹 Why do we use Lazy Fetch?
+1️⃣ Performance optimization
+
+Avoids loading unnecessary data
+
+Reduces memory usage
+
+Faster response time
+
+2️⃣ Controlled data loading
+
+Load child data only when required
+
+Useful when parent has large child collections
+
+
+
+
 
 🔹 Now what happens when you do Lazy Fetch:
 Post post = postRepository.findById(1L).orElseThrow();
