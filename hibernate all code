@@ -1779,7 +1779,7 @@ public void getPostAndItsComments() {
     Post post = postRepository.findById(1L).orElseThrow();
     List<Comment> comments = post.getComments(); // Works now!
 }
-
+-> Lazy loading requires an open Hibernate session.
 -> A Hibernate session is kept open for the entire method.
 -> When you access post.getComments(), Hibernate can safely go to the DB and fetch the comments on demand.
 -> This works perfectly with lazy loading.
