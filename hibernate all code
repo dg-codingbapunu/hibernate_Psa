@@ -1802,7 +1802,20 @@ Note:
 | `@Query`          | Allows writing custom JPQL or native SQL queries inside repository methods.                                              |
 | `@Transactional`  | Manages the database transaction for the method or class. Automatically commits on success and rolls back on exceptions. |
 
+Q:What is Mapped By?
+mappedBy is used in bi-directional mapping to indicate the inverse (non-owning) side of a relationship.
 
+Why do we need mappedBy?
+
+Without mappedBy:
+
+Hibernate thinks both sides are owners
+
+It may create extra join tables or duplicate mappings
+
+Leads to incorrect schema and performance issues
+
+mappedBy avoids this by clearly defining one owner.
 
 ###########################
 ManyToManyMapping
